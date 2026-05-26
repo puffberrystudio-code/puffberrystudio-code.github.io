@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Puffberry Studio creates charming mobile games with cozy fun, playful characters, and colorful little worlds.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --purple: #32135f;
@@ -23,7 +27,8 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Nunito", Arial, Helvetica, sans-serif;
+      font-weight: 600;
       background: var(--bg);
       color: var(--purple);
     }
@@ -68,7 +73,7 @@
     nav a {
       color: #7e7899;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     nav a:hover {
@@ -93,20 +98,22 @@
 
     h1 {
       margin: 0;
+      font-family: "Baloo 2", Arial, Helvetica, sans-serif;
+      font-weight: 800;
       font-size: clamp(42px, 6vw, 76px);
       line-height: 1.05;
-      letter-spacing: -1.5px;
+      letter-spacing: -0.5px;
       color: var(--purple);
-      font-weight: 900;
     }
 
     .subtitle {
       max-width: 760px;
       margin: 58px auto 0;
+      font-family: "Nunito", Arial, Helvetica, sans-serif;
+      font-weight: 600;
       font-size: clamp(17px, 2vw, 22px);
       line-height: 1.55;
       color: #8581aa;
-      font-weight: 700;
     }
 
     .games {
@@ -141,9 +148,10 @@
 
     .game-title {
       margin: 18px 10px 0;
-      font-size: 22px;
-      line-height: 1.2;
+      font-family: "Baloo 2", Arial, Helvetica, sans-serif;
       font-weight: 800;
+      font-size: 24px;
+      line-height: 1.15;
       color: #222222;
     }
 
@@ -151,8 +159,16 @@
       padding: 10px 20px 44px;
       text-align: center;
       color: #827b9d;
+      font-family: "Nunito", Arial, Helvetica, sans-serif;
+      font-weight: 600;
       font-size: 14px;
       line-height: 1.7;
+    }
+
+    .studio-line {
+      margin: 0 0 18px;
+      color: #827b9d;
+      font-weight: 600;
     }
 
     .contact-line {
@@ -160,18 +176,12 @@
       font-size: clamp(22px, 2.6vw, 32px);
       line-height: 1.35;
       color: var(--link);
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .contact-line a {
       color: var(--link);
       text-decoration: none;
-    }
-
-    .studio-line {
-      margin: 0 0 18px;
-      color: #827b9d;
-      font-weight: 600;
     }
 
     .copyright {
@@ -211,7 +221,7 @@
       }
 
       .game-title {
-        font-size: 20px;
+        font-size: 22px;
       }
 
       .contact-line {
@@ -255,7 +265,7 @@
         <div class="game-title">Kibbi: Virtual Pet Friend</div>
       </a>
 
-      <a class="game-card" href="#" aria-label="Rushlings coming soon">
+      <a class="game-card" href="https://play.google.com/store/apps/details?id=com.puffberrystudio.rushlings" target="_blank" rel="noopener">
         <img src="RushlingsApp.png" alt="Rushlings">
         <div class="game-title">Rushlings</div>
       </a>
