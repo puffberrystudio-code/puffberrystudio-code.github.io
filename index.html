@@ -4,18 +4,273 @@
   <meta charset="utf-8">
   <title>Puffberry Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Puffberry Studio creates charming mobile games with cozy fun, playful characters, and colorful little worlds.">
+
+  <style>
+    :root {
+      --purple: #32135f;
+      --soft-purple: #7f78a8;
+      --pink: #e83d87;
+      --bg: #ffffff;
+      --line: rgba(50, 19, 95, 0.08);
+      --shadow: rgba(50, 19, 95, 0.12);
+      --link: #1f6f9f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--purple);
+    }
+
+    header {
+      height: 54px;
+      padding: 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 255, 255, 0.94);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--soft-purple);
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: #7e7899;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--purple);
+    }
+
+    .hero {
+      min-height: 360px;
+      padding: 76px 20px 52px;
+      text-align: center;
+      background:
+        radial-gradient(circle, rgba(126, 111, 168, 0.16) 2px, transparent 3px);
+      background-size: 44px 44px;
+    }
+
+    .hero-logo {
+      width: min(360px, 76vw);
+      height: auto;
+      margin: 0 auto 36px;
+      display: block;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      color: var(--purple);
+      font-weight: 900;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 58px auto 0;
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.55;
+      color: #8581aa;
+      font-weight: 700;
+    }
+
+    .games {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px 72px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      align-items: start;
+    }
+
+    .game-card {
+      display: block;
+      color: #1d1d1f;
+      text-decoration: none;
+      background: #ffffff;
+      overflow: hidden;
+      transition: transform 0.18s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .game-card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+    }
+
+    .game-title {
+      margin: 18px 10px 0;
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 800;
+      color: #222222;
+    }
+
+    footer {
+      padding: 10px 20px 44px;
+      text-align: center;
+      color: #827b9d;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .contact-line {
+      margin: 24px 0 70px;
+      font-size: clamp(22px, 2.6vw, 32px);
+      line-height: 1.35;
+      color: var(--link);
+      font-weight: 500;
+    }
+
+    .contact-line a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .studio-line {
+      margin: 0 0 18px;
+      color: #827b9d;
+      font-weight: 600;
+    }
+
+    .copyright {
+      margin: 0;
+      color: #827b9d;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    footer a {
+      color: var(--purple);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding: 0 16px;
+      }
+
+      nav {
+        gap: 14px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 54px 18px 42px;
+      }
+
+      .subtitle {
+        margin-top: 36px;
+      }
+
+      .games {
+        grid-template-columns: 1fr;
+        padding: 0 18px 48px;
+      }
+
+      .game-title {
+        font-size: 20px;
+      }
+
+      .contact-line {
+        margin-bottom: 48px;
+      }
+
+      .copyright {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Puffberry Studio</h1>
-  <p>Small games. Big little worlds.</p>
-  <p>Developer of Kibbi: Virtual Pet Friend.</p>
+  <header>
+    <a class="brand" href="/">
+      <img src="PuffberryStudio_Logo_Transparent.png" alt="Puffberry Studio logo">
+      <span>PuffberryStudio</span>
+    </a>
 
-  <h2>Games</h2>
-  <ul>
-    <li>Kibbi: Virtual Pet Friend</li>
-  </ul>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="privacy.html">Política de privacidad</a>
+    </nav>
+  </header>
 
-  <h2>Contact</h2>
-  <p>Email: puffberrystudio@gmail.com</p>
+  <main>
+    <section class="hero">
+      <img class="hero-logo" src="PuffberryStudio_Logo_Transparent.png" alt="Puffberry Studio">
+
+      <h1>Small games. Big little worlds</h1>
+
+      <p class="subtitle">
+        Discover charming mobile adventures with cozy fun, playful characters and colorful surprises.
+      </p>
+    </section>
+
+    <section class="games" aria-label="Puffberry Studio games">
+      <a class="game-card" href="https://play.google.com/store/apps/details?id=com.mppstudios.virtualpetandroid" target="_blank" rel="noopener">
+        <img src="KibbiApp.png" alt="Kibbi: Virtual Pet Friend">
+        <div class="game-title">Kibbi: Virtual Pet Friend</div>
+      </a>
+
+      <a class="game-card" href="#" aria-label="Rushlings coming soon">
+        <img src="RushlingsApp.png" alt="Rushlings">
+        <div class="game-title">Rushlings</div>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p class="studio-line">Puffberry Studio · Small games. Big little worlds.</p>
+
+    <p class="contact-line">
+      Dirección de contacto:
+      <a href="mailto:puffberrystudio@gmail.com">puffberrystudio@gmail.com</a>
+    </p>
+
+    <p class="copyright">© 2026 Puffberry Studio. All rights reserved.</p>
+  </footer>
 </body>
 </html>
