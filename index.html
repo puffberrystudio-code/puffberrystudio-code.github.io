@@ -127,8 +127,8 @@
     .store-btn {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      padding: 14px 26px;
+      gap: 12px;
+      padding: 14px 28px;
       border-radius: 18px;
       text-decoration: none;
       font-family: "Nunito", Arial, Helvetica, sans-serif;
@@ -153,9 +153,11 @@
       color: white;
     }
 
-    .store-icon {
-      font-size: 20px;
-      line-height: 1;
+    .store-svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+      flex-shrink: 0;
     }
 
     .games {
@@ -301,13 +303,18 @@
       </p>
 
       <div class="store-buttons">
+
         <a
           class="store-btn android"
           href="https://play.google.com/store/apps/dev?id=7834897877866356292"
           target="_blank"
           rel="noopener"
         >
-          <span class="store-icon">🤖</span>
+
+          <svg class="store-svg" viewBox="0 0 512 512" aria-hidden="true">
+            <path fill="currentColor" d="M325.3 234.3L104.6 13.7c-7.6-7.6-20.4-2.2-20.4 8.5v467.7c0 10.7 12.8 16.1 20.4 8.5l220.7-220.6zm35.4 35.4l57.8 57.8c14.6 14.6 14.6 38.2 0 52.8l-39.4 39.4c-7.3 7.3-18.6 9.2-27.9 4.7L171 331.5l189.7-61.8zm57.8-85.2l-57.8 57.8L171 180.5l180.2-92.9c9.3-4.5 20.6-2.6 27.9 4.7l39.4 39.4c14.6 14.6 14.6 38.2 0 52.8z"/>
+          </svg>
+
           Visit App Store
         </a>
 
@@ -317,9 +324,14 @@
           target="_blank"
           rel="noopener"
         >
-          <span class="store-icon"></span>
+
+          <svg class="store-svg" viewBox="0 0 384 512" aria-hidden="true">
+            <path fill="currentColor" d="M318.7 268.1c-.2-47.6 38.9-70.4 40.7-71.5-22.3-32.5-56.9-36.9-69.2-37.4-29.5-3-57.6 17.3-72.5 17.3-14.9 0-37.8-16.9-62.2-16.4-32 .5-61.5 18.6-78 47.3-33.3 57.8-8.5 143.3 23.9 190.1 15.8 22.8 34.7 48.3 59.5 47.4 23.9-.9 32.9-15.5 61.8-15.5s37 15.5 62.3 15c25.8-.4 42.2-23.4 57.8-46.3 18.1-26.4 25.5-52 25.8-53.3-.6-.2-49.4-18.9-49.9-74.7zM259.5 121.8c13.1-15.9 22-38 19.6-60.1-18.9.8-41.8 12.6-55.3 28.4-12.1 14-22.7 36.5-19.8 58 21.1 1.6 42.4-10.7 55.5-26.3z"/>
+          </svg>
+
           Visit App Store
         </a>
+
       </div>
     </section>
 
