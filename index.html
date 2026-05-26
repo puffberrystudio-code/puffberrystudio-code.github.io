@@ -110,10 +110,52 @@
       max-width: 760px;
       margin: 58px auto 0;
       font-family: "Nunito", Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      font-size: clamp(17px, 2vw, 22px);
-      line-height: 1.55;
-      color: #8581aa;
+      font-weight: 800;
+      font-size: clamp(22px, 2.6vw, 30px);
+      line-height: 1.5;
+      color: #6f6996;
+    }
+
+    .store-buttons {
+      margin-top: 34px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-family: "Nunito", Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      font-size: 17px;
+      transition: transform 0.18s ease, opacity 0.18s ease;
+      box-shadow: 0 8px 22px rgba(50, 19, 95, 0.12);
+    }
+
+    .store-btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.96;
+    }
+
+    .android {
+      background: #34a853;
+      color: white;
+    }
+
+    .apple {
+      background: #1f1f1f;
+      color: white;
+    }
+
+    .store-icon {
+      font-size: 20px;
+      line-height: 1;
     }
 
     .games {
@@ -257,6 +299,28 @@
       <p class="subtitle">
         Discover charming mobile adventures with cozy fun, playful characters and colorful surprises.
       </p>
+
+      <div class="store-buttons">
+        <a
+          class="store-btn android"
+          href="https://play.google.com/store/apps/dev?id=7834897877866356292"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="store-icon">🤖</span>
+          Visit App Store
+        </a>
+
+        <a
+          class="store-btn apple"
+          href="#"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="store-icon"></span>
+          Visit App Store
+        </a>
+      </div>
     </section>
 
     <section class="games" aria-label="Puffberry Studio games">
