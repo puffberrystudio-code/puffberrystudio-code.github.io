@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Puffberry Studio</title>
+  <title>Privacy Policy | Puffberry Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Puffberry Studio creates charming mobile games with cozy fun, playful characters, and colorful little worlds.">
+  <meta name="description" content="Privacy Policy for Puffberry Studio mobile games.">
 
   <style>
     :root {
       --purple: #32135f;
       --soft-purple: #7f78a8;
-      --pink: #e83d87;
-      --bg: #ffffff;
       --line: rgba(50, 19, 95, 0.08);
-      --shadow: rgba(50, 19, 95, 0.12);
+      --text: #2a2438;
+      --muted: #6f6884;
       --link: #1f6f9f;
+      --bg-soft: #fbf9ff;
     }
 
     * {
@@ -24,8 +24,9 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--purple);
+      color: var(--text);
+      background: #ffffff;
+      line-height: 1.65;
     }
 
     header {
@@ -75,116 +76,69 @@
       color: var(--purple);
     }
 
-    .hero {
-      min-height: 360px;
-      padding: 76px 20px 52px;
-      text-align: center;
-      background:
-        radial-gradient(circle, rgba(126, 111, 168, 0.16) 2px, transparent 3px);
-      background-size: 44px 44px;
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
     }
 
-    .hero-logo {
-      width: min(360px, 76vw);
-      height: auto;
-      margin: 0 auto 36px;
-      display: block;
+    .policy {
+      background: var(--bg-soft);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: clamp(28px, 5vw, 56px);
+      box-shadow: 0 14px 40px rgba(50, 19, 95, 0.08);
     }
 
     h1 {
-      margin: 0;
-      font-size: clamp(42px, 6vw, 76px);
+      margin: 0 0 8px;
+      font-size: clamp(36px, 5vw, 56px);
       line-height: 1.05;
-      letter-spacing: -1.5px;
       color: var(--purple);
-      font-weight: 900;
+      letter-spacing: -1px;
     }
 
-    .subtitle {
-      max-width: 760px;
-      margin: 58px auto 0;
-      font-size: clamp(17px, 2vw, 22px);
-      line-height: 1.55;
-      color: #8581aa;
+    .updated {
+      margin: 0 0 34px;
+      color: var(--muted);
       font-weight: 700;
     }
 
-    .games {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 0 24px 72px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px;
-      align-items: start;
+    h2 {
+      margin: 34px 0 10px;
+      font-size: 24px;
+      color: var(--purple);
     }
 
-    .game-card {
-      display: block;
-      color: #1d1d1f;
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      margin: 0 0 16px 24px;
+      padding: 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--link);
       text-decoration: none;
-      background: #ffffff;
-      overflow: hidden;
-      transition: transform 0.18s ease;
-    }
-
-    .game-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .game-card img {
-      width: 100%;
-      aspect-ratio: 16 / 10;
-      object-fit: cover;
-      display: block;
-    }
-
-    .game-title {
-      margin: 18px 10px 0;
-      font-size: 22px;
-      line-height: 1.2;
-      font-weight: 800;
-      color: #222222;
+      font-weight: 700;
     }
 
     footer {
-      padding: 10px 20px 44px;
       text-align: center;
+      padding: 36px 20px 44px;
       color: #827b9d;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    .contact-line {
-      margin: 24px 0 70px;
-      font-size: clamp(22px, 2.6vw, 32px);
-      line-height: 1.35;
-      color: var(--link);
-      font-weight: 500;
-    }
-
-    .contact-line a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    .studio-line {
-      margin: 0 0 18px;
-      color: #827b9d;
-      font-weight: 600;
+      border-top: 1px solid var(--line);
     }
 
     .copyright {
       margin: 0;
-      color: #827b9d;
-      font-size: 20px;
       font-weight: 800;
-    }
-
-    footer a {
-      color: var(--purple);
-      text-decoration: none;
-      font-weight: 700;
     }
 
     @media (max-width: 720px) {
@@ -197,29 +151,12 @@
         font-size: 13px;
       }
 
-      .hero {
-        padding: 54px 18px 42px;
+      main {
+        padding: 36px 16px 56px;
       }
 
-      .subtitle {
-        margin-top: 36px;
-      }
-
-      .games {
-        grid-template-columns: 1fr;
-        padding: 0 18px 48px;
-      }
-
-      .game-title {
-        font-size: 20px;
-      }
-
-      .contact-line {
-        margin-bottom: 48px;
-      }
-
-      .copyright {
-        font-size: 17px;
+      .policy {
+        border-radius: 18px;
       }
     }
   </style>
@@ -239,37 +176,103 @@
   </header>
 
   <main>
-    <section class="hero">
-      <img class="hero-logo" src="PuffberryStudio_Logo_Transparent.png" alt="Puffberry Studio">
+    <article class="policy">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: May 22, 2026</p>
 
-      <h1>Small games. Big little worlds</h1>
-
-      <p class="subtitle">
-        Discover charming mobile adventures with cozy fun, playful characters and colorful surprises.
+      <p>
+        Puffberry Studio builds mobile games. This Privacy Policy explains how Puffberry Studio apps access, collect, use, and share information.
       </p>
-    </section>
 
-    <section class="games" aria-label="Puffberry Studio games">
-      <a class="game-card" href="https://play.google.com/store/apps/details?id=com.mppstudios.virtualpetandroid" target="_blank" rel="noopener">
-        <img src="KibbiApp.png" alt="Kibbi: Virtual Pet Friend">
-        <div class="game-title">Kibbi: Virtual Pet Friend</div>
-      </a>
+      <h2>Developer</h2>
+      <p><strong>Developer name:</strong> Puffberry Studio</p>
+      <p><strong>Contact email:</strong> <a href="mailto:puffberrystudio@gmail.com">puffberrystudio@gmail.com</a></p>
 
-      <a class="game-card" href="#" aria-label="Rushlings coming soon">
-        <img src="RushlingsApp.png" alt="Rushlings">
-        <div class="game-title">Rushlings</div>
-      </a>
-    </section>
+      <h2>Information collected by our apps</h2>
+      <p>
+        Puffberry Studio apps do not require users to create an account. Our apps do not ask users to provide their name, email address, phone number, address, or other directly identifiable personal information.
+      </p>
+      <p>
+        Our apps may store gameplay progress, game settings, unlocked content, coins, achievements, or similar game-related information locally on the user’s device.
+      </p>
+
+      <h2>Advertising and third-party services</h2>
+      <p>
+        Puffberry Studio apps may use Google AdMob to display ads, including banner ads and rewarded ads.
+      </p>
+      <p>
+        Google Mobile Ads SDK may automatically collect and share certain information for advertising, analytics, and fraud prevention purposes, including IP address, app interactions, diagnostic information, device identifiers, and advertising identifiers.
+      </p>
+      <p>
+        This information may be used by Google and its partners to provide, measure, personalize, and improve advertising services, prevent fraud, and maintain service security.
+      </p>
+
+      <h2>In-app purchases</h2>
+      <p>
+        Puffberry Studio apps may offer optional in-app purchases through Google Play Billing.
+      </p>
+      <p>
+        Purchases are processed by Google Play. Puffberry Studio does not collect or store payment card information.
+      </p>
+
+      <h2>How information is used</h2>
+      <p>Information may be used to:</p>
+      <ul>
+        <li>Provide and improve the game experience.</li>
+        <li>Save local game progress and preferences.</li>
+        <li>Show ads, including rewarded ads.</li>
+        <li>Support in-app purchases.</li>
+        <li>Detect, prevent, and address technical issues, abuse, or fraud.</li>
+        <li>Comply with applicable platform, legal, and policy requirements.</li>
+      </ul>
+
+      <h2>Data sharing</h2>
+      <p>
+        Puffberry Studio does not sell users’ personal information.
+      </p>
+      <p>
+        Some data may be collected or processed by third-party services used in our apps, including Google AdMob and Google Play services, according to their own privacy practices.
+      </p>
+
+      <h2>Data security</h2>
+      <p>
+        Data collected by third-party services may be transmitted using secure protocols. Puffberry Studio uses reasonable measures to protect information related to its apps, but no method of transmission or storage is completely secure.
+      </p>
+
+      <h2>Data retention and deletion</h2>
+      <p>
+        Game progress and preferences stored locally on the device may be deleted by uninstalling the app or clearing the app’s data from the device settings.
+      </p>
+      <p>
+        Puffberry Studio does not create user accounts inside its apps. If users have privacy questions or deletion requests related to information handled by Puffberry Studio, they may contact us at
+        <a href="mailto:puffberrystudio@gmail.com">puffberrystudio@gmail.com</a>.
+      </p>
+      <p>
+        For data collected by Google services, users may manage advertising preferences and privacy controls through their Google account and Android device settings.
+      </p>
+
+      <h2>Children’s privacy</h2>
+      <p>
+        Puffberry Studio apps are not intended to knowingly collect personal information directly from children.
+      </p>
+      <p>
+        If Puffberry Studio becomes aware that personal information from a child has been collected without appropriate consent, we will take reasonable steps to delete it.
+      </p>
+
+      <h2>Changes to this Privacy Policy</h2>
+      <p>
+        Puffberry Studio may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Last updated” date.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy, contact us at:
+        <a href="mailto:puffberrystudio@gmail.com">puffberrystudio@gmail.com</a>
+      </p>
+    </article>
   </main>
 
   <footer>
-    <p class="studio-line">Puffberry Studio · Small games. Big little worlds.</p>
-
-    <p class="contact-line">
-      Dirección de contacto:
-      <a href="mailto:puffberrystudio@gmail.com">puffberrystudio@gmail.com</a>
-    </p>
-
     <p class="copyright">© 2026 Puffberry Studio. All rights reserved.</p>
   </footer>
 </body>
